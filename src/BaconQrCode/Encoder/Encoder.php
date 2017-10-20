@@ -684,4 +684,9 @@ class Encoder
         $bits->appendBits($mode->get(), 4);
         $bits->appendBits($eci->get(), 8);
     }
+
+    private static function isOnlyDoubleByteKanji($content)
+    {
+        return false;
+    }
 }
